@@ -1,0 +1,24 @@
+# Dependencies
+node_modules/
+.env
+
+# Build
+target/
+dist/
+*.zip
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Go
+backend/server/agente-gcp
+
+# Python
+__pycache__/
+*.pyc
+.venv/

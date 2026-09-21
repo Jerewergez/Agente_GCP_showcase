@@ -1,0 +1,18 @@
+resources:
+  cpu: 2
+  memory: 1Gi
+  concurrency: 80
+  min_instances: 1
+  max_instances: 100
+
+env:
+  - name: GCP_PROJECT
+    value: dev1pruebas
+  - name: BQ_DATASET_SILVER
+    value: ANALYTICS_SILVER
+  - name: BQ_DATASET_GOLD
+    value: ANALYTICS_GOLD
+
+autoscaling:
+  target_cpu_utilization: 0.6
+  max_scaledown_replicas: 1
