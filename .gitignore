@@ -22,3 +22,7 @@ backend/server/agente-gcp
 __pycache__/
 *.pyc
 .venv/
+
+# tool internals
+.engram/
+.hermes/
